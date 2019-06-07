@@ -37,7 +37,7 @@ Please install the Android Support Repository from the Android SDK Manager.
 Open Android SDK Manager
 ```
 
-反正大概意思就是个版本问题，虽然不太清楚到底是哪个版本啥啥啥的，干脆直接这么改（改掉第三行的正则）：
+反正大概意思就是个版本问题，虽然不太清楚到底是哪个版本啥啥啥的，干脆直接在Module的build.gradle里这么改（改掉第三行的正则）：
 
 ```
 dependencies {
