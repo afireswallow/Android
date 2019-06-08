@@ -21,7 +21,7 @@ public class GameActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
-        level = 1;
+        level = 2;
         //level = getIntent().getIntExtra("position", 1);//有值写值，默认为1
         initView();
         gv.setLevel(level);
