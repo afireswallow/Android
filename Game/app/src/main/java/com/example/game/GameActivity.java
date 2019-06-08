@@ -22,16 +22,14 @@ public class GameActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
         level = 2;
-        //level = getIntent().getIntExtra("position", 1);//有值写值，默认为1
         initView();
         gv.setLevel(level);
         initEvent();
-
     }
 
     private void initView() {
         tvtitle = (TextView) findViewById(R.id.tv_title);
-        tvtitle.setText("推箱子游戏第" + String.valueOf(level) + "关");
+        tvtitle.setText("2048");
         gv = (GameView) findViewById(R.id.gv);
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar); //把toolbar变成标题栏
@@ -114,6 +112,8 @@ public class GameActivity extends AppCompatActivity {
                 //对menu进行更新
                 invalidateOptionsMenu();//回调
                 break;
+            case R.id.item_exit:
+                finish();
             default:
                 break;
         }

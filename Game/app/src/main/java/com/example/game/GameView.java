@@ -54,13 +54,13 @@ public class GameView extends View {
         manBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.man);
         srcManRect = new Rect(0, 0, manBitmap.getWidth(), manBitmap.getHeight());
 
-        targetBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.target);
+        targetBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.sheep);
         srcTargetRect = new Rect(0, 0, targetBitmap.getWidth(), targetBitmap.getHeight());
 
-        boxBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.box);
+        boxBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.wolf_zm);
         srcBoxRect = new Rect(0, 0, boxBitmap.getWidth(), boxBitmap.getHeight());
 
-        boxInTargetBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.redbox);
+        boxInTargetBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.com_girl);
         srcBoxInTargetRect = new Rect(0, 0, boxInTargetBitmap.getWidth(), boxInTargetBitmap.getHeight());
 
     }

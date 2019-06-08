@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-<item
-    android:id="@+id/item_restart"
-    android:title="重新开始"
-    app:showAsAction="never"/>
+    <item
+        android:id="@+id/item_restart"
+        android:title="重新开始"
+        app:showAsAction="never" />
     <!--app:showAsAction 这个item菜单栏是否需要下拉才出来-->
     <!--5个值 ：-->
     <!--ifRoom 如果有空间直接放在标题栏-->
@@ -14,11 +14,16 @@
     <item
         android:id="@+id/item_previous"
         android:title="上一关"
-        app:showAsAction="never"/>
+        app:showAsAction="never" />
 
     <item
         android:id="@+id/item_next"
         android:title="下一关"
-        app:showAsAction="never"/>
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/item_exit"
+        android:title="退出游戏"
+        app:showAsAction="never" />
 
 </menu>

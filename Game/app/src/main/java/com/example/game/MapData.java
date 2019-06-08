@@ -62,40 +62,37 @@ public class MapData {
 
 
     public static int[][] getMap(int stage) {//防止意外退出后能继续使用当前的地图数据对象
-            int[][] temp;
-        temp=new int[map1.length][map1[0].length];
-        for (int i=0;i<map1.length;i++){
-            for(int j=0;j<map1[0].length;j++){
-                temp[i][j]=map1[i][j];
+        int[][] temp;
+        temp = new int[map1.length][map1[0].length];
+        for (int i = 0; i < map1.length; i++) {
+            for (int j = 0; j < map1[0].length; j++) {
+                temp[i][j] = map1[i][j];
             }
         }
         switch (stage) {
             case 1:
-
                 return temp;
             case 2:
-                temp=new int[map2.length][map2[0].length];
-                for (int i=0;i<map2.length;i++){
-                    for(int j=0;j<map2[0].length;j++){
-                        temp[i][j]=map2[i][j];
+                temp = new int[map2.length][map2[0].length];
+                for (int i = 0; i < map2.length; i++) {
+                    for (int j = 0; j < map2[0].length; j++) {
+                        temp[i][j] = map2[i][j];
                     }
                 }
                 return temp;
             case 3:
-
-                temp=new int[map3.length][map3[0].length];
-                for (int i=0;i<map3.length;i++){
-                    for(int j=0;j<map3[0].length;j++){
-                        temp[i][j]=map3[i][j];
+                temp = new int[map3.length][map3[0].length];
+                for (int i = 0; i < map3.length; i++) {
+                    for (int j = 0; j < map3[0].length; j++) {
+                        temp[i][j] = map3[i][j];
                     }
                 }
                 return temp;
             case 4:
-
-                temp=new int[map4.length][map4[0].length];
-                for (int i=0;i<map4.length;i++){
-                    for(int j=0;j<map4[0].length;j++){
-                        temp[i][j]=map4[i][j];
+                temp = new int[map4.length][map4[0].length];
+                for (int i = 0; i < map4.length; i++) {
+                    for (int j = 0; j < map4[0].length; j++) {
+                        temp[i][j] = map4[i][j];
                     }
                 }
                 return temp;
